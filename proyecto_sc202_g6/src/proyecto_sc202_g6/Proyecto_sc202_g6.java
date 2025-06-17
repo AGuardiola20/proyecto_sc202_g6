@@ -4,6 +4,8 @@
  */
 package proyecto_sc202_g6;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Andres
@@ -14,7 +16,11 @@ public class Proyecto_sc202_g6 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        // TODO: Se debe de validar que código ISBN empiece por '978' o '979')
+        
+        Book book = new Book("Harry Potter", "J.K Rowling", "000", true);        
+        JOptionPane.showMessageDialog(null, book.toString());
     }
     
 }
