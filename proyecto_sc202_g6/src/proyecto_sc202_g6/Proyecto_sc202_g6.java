@@ -16,11 +16,17 @@ public class Proyecto_sc202_g6 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+
         // TODO: Se debe de validar que código ISBN empiece por '978' o '979')
-        
-        Book book = new Book("Harry Potter", "J.K Rowling", "000", true);        
-        JOptionPane.showMessageDialog(null, book.toString());
+        Book book = new Book("Harry Potter", "J.K Rowling", "000", true);
+        Book book2 = new Book("Harry Potter 12", "J.K Rowling", "000", true);
+
+        Bookshelf bookshelf = new Bookshelf();
+
+        bookshelf.addBook(book, 0);
+        bookshelf.addBook(book2, 1);
+
+        bookshelf.getAllBooks();
     }
-    
+
 }
